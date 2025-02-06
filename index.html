@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+
+    <div id="container">
+        <div id="title-content">
+            <h1 id="h1-a">Conversor de moeda</h1>
+        </div>
+
+            <form id="form-content" >
+                <div id="enter-amount">
+                    <label for="input-value">Insira o valor</label>
+                    <input class="input-border" type="number" name="input-value" id="input-value">
+                    <p id="alert-p">Insira um valor maior que zero</p>
+                </div>
+
+                <div id="from-to">
+                    <div class="div-selects">
+                        <label for="from-select">
+                            De</label>
+                         <select class="selects" name="from-select" id="from-select">
+                        </select>
+                    </div>
+                    <div id="div-icon-arrow">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="div-selects">
+                        <label for="to-select">Para</label>
+                        <select class="selects" name="to-select" id="to-select">
+                        </select>
+                    </div>
+                </div>
+
+                <div id="request-values-api-content">
+                    <p id="values-requested"></p>
+                </div>
+
+                <div id="div-btn-submit">
+                    <input type="submit" id="submit-button" value="Obter taxa de câmbio">
+                </div>
+            </form>
+    </div>
+
+
+    <script src="js/Convertor.js"></script>
+</body>
+</html>
